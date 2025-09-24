@@ -1,0 +1,19 @@
+FileReader is a character stream class in Java used to read data from a text file character by character.
+It is part of the java.io package and is typically used for reading plain text files.
+
+->we can directly pass the file name as a parameter for FileReader constructor while creating object
+
+Syntax:
+    FileReader fr = new FileReader("filename.txt");
+
+->else we can pass the File class object as a parameter for FileReader constructor
+Syntax:
+    File f = new File("filename.txt");
+    FileReader fr = new FileReader(f);
+
+The file reader will read charecter by charecter from the file through read() method
+
+read() -> will returns the unicode of the each and every charecter,
+          If there is no charecters found it will returns -1 .
+
+Note : If you are using Filereader then the file needs to be exist , else it will raise FileNotFoundException
