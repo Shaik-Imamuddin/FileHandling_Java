@@ -1,0 +1,22 @@
+FileWriter is a character stream class in Java used to write data to a text file character by character.
+It is part of the java.io package and is typically used for writing plain text files.
+
+By default, FileWriter overwrites the file content, but if we want to append data instead of overwriting,
+we need to use the constructor with the append flag (true).
+
+->We can directly pass the file name and true as parameters for the FileWriter constructor while creating an object.
+
+Syntax:
+    FileWriter fw = new FileWriter("filename.txt", true);
+
+->Else we can pass the File class object and true as parameter for the FileWriter constructor.
+
+    File f = new File("filename.txt");
+    FileWriter fw = new FileWriter(f, true);
+
+
+The FileWriter writes characters to the file using the write() method.
+
+If the file does not exist, FileWriter will create a new file.
+By default, FileWriter overwrites the existing content in the file.
+if you opened in the Append mode it will add the new data to existing data in the file
