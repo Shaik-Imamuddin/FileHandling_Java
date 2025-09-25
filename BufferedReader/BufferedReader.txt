@@ -1,0 +1,26 @@
+BufferedReader is a character stream class in Java used to read text from a character-based input stream efficiently.
+It is part of the java.io package and is commonly used to read text line by line from a file.
+
+
+->We can directly pass the file name as a parameter for the FileReader constructor 
+and then pass FileReader object to BufferedReader constructor while creating an object.
+
+Syntax:
+    FileReader fr = new FileReader("filename.txt");
+    BufferedReader br = new BufferedReader(fr);
+
+->Else we can pass the File class object as a parameter to the FileReader constructor and then  
+pass the FileReader object to BufferedReader constructor while creating an object to BufferedReader.
+
+Syntax:
+    File f = new File("filename.txt");
+    FileReader fr = new FileReader(f);
+    BufferedReader br = new BufferedReader(fr);
+
+
+The BufferedReader reads text from a character-based input stream efficiently by buffering characters.
+
+It uses the read() method to read a single character or an array of characters 
+and the readLine() method to read one line at a time.
+
+If the file does not exist, FileReader will throw a FileNotFoundException.

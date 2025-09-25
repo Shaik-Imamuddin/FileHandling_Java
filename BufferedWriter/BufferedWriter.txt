@@ -1,0 +1,22 @@
+BufferedWriter is a character stream class in Java used to write text to a file efficiently.
+It is part of the java.io package and is commonly used to write text line by line.
+
+-> We can directly pass the file name as a parameter to the FileWriter constructor
+and then pass the FileWriter object to the BufferedWriter constructor.
+
+Syntax:
+    FileWriter fw = new FileWriter("filename.txt");
+    BufferedWriter bw = new BufferedWriter(fw);
+
+-> Else we can pass a File object to the FileWriter constructor and then
+pass the FileWriter object to the BufferedWriter constructor.
+
+File f = new File("filename.txt");
+FileWriter fw = new FileWriter(f);
+BufferedWriter bw = new BufferedWriter(fw);
+
+The BufferedWriter writes text efficiently by buffering characters.
+It uses the write() method to write text and the newLine() method to add a new line.
+
+If the file does not exist, FileWriter will create a new file.
+By default, it overwrites the existing content unless opened in append mode Refer BufferedAppened for Append code.
