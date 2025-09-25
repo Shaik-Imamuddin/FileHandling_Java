@@ -1,0 +1,3 @@
+From This text File
+Iam Reading the data
+By using Bufferedader
